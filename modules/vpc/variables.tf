@@ -1,17 +1,13 @@
-variable "AWS_REGION" {
-  description = "Default region"
-  type        = string
-  default     = "us-east-1"
-}
+#-----------------------------
+# Required values
+#-----------------------------
 
-# Defined for each environment testing
-
-variable "ENVIRONMENT" {
-  description = "Working context (i.e. - dev, test, pre-prod)"
+variable "_name" {
+  description = "VPC name (i.e. - dev, test, pre-prod)"
   type        = string
 }
 
-variable "VPC_CIDR_BLOCK" {
-  description = "Working context (i.e. - dev, test, pre-prod)"
+variable "_cidr_block" {
+  description = "CIDR block for the VPC"
   type        = string
 }
