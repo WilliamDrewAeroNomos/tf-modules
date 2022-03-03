@@ -13,11 +13,6 @@ resource "aws_vpc" "main" {
     Name = "${var.ENVIRONMENT}-vpc"
   }
 
-  output "vpc-main" {
-    value       = module.mysql.address
-    description = "Connect to the database at this endpoint"
-  }
-
 }
 
 output "vpc-main-id" {
