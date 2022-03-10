@@ -14,8 +14,3 @@ resource "aws_vpc" "main" {
     Name = "${var._name}"
   }
 }
-
-
-output "vpc-main-id" {
-  value = aws_vpc.main.id
-}
